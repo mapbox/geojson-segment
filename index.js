@@ -1,5 +1,14 @@
 module.exports = segment;
 
+/**
+ * @alias segment
+ *
+ * Given a [GeoJSON](http://geojson.org/) produced by [toGeoJSON](https://github.com/mapbox/togeojson)
+ * from GPX, split LineString geometries into two-vertex linestrings with properties
+ * of heartRate and time before & after.
+ * @param {Object} geojson a GeoJSON FeatureCollection object output by toGeoJSON
+ * @returns {Object} a GeoJSON FeatureCollection of two-vertex linestrings
+ */
 function segment(geojson) {
     var segments = [];
     geojson.features.forEach(function(f) {
