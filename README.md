@@ -25,7 +25,7 @@ of heartRate and time before & after.
 Requires [nodejs](http://nodejs.org/).
 
 ```sh
-$ npm install geojson-segment
+$ npm install @mapbox/geojson-segment
 ```
 
 ## Tests
